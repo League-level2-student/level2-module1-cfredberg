@@ -8,11 +8,11 @@ public class IntroToArrayLists {
 		//   Don't forget to import the ArrayList class
 		ArrayList<String> array = new ArrayList<String>();
 		//2. Add five Strings to your list
-		array.add("Hello");
-		array.add("hEllo");
-		array.add("heLlo");
-		array.add("helLo");
-		array.add("hellO");
+		array.add("0");
+		array.add("1");
+		array.add("2");
+		array.add("3e");
+		array.add("4");
 		//3. Print all the Strings using a standard for-loop
 		for (int i = 0; i < array.size(); i++) {
 			System.out.println(array.get(i));
@@ -21,10 +21,22 @@ public class IntroToArrayLists {
 		for (String s : array) {
 			System.out.println(s);
 		}
-		//5. Print only the even numbered elements in the list.
+		//5. Print only the even numbered elements in the list
+		for (int i = 0; i < array.size(); i++) {
+			if (i % 2 == 0) {
+				System.out.println(array.get(i));
+			}
+		}
 		
 		//6. Print all the Strings in reverse order.
-		
+		for (int i = array.size()-1; i >= 0; i--) {
+			System.out.println(array.get(i));
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for (int i = 0; i < array.size(); i++) {
+			if (array.get(i).contains("e")) {
+				System.out.println(array.get(i));
+			}
+		}
 	}
 }
